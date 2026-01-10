@@ -34,7 +34,12 @@ body {
     border-bottom: 1px solid #C2C2C2;
 }
 
-.group-navbar-menubar .navbar .title {
+.group-navbar-menubar .navbar .title-app {
+    display: flex;
+    gap: 10px;
+}
+
+.group-navbar-menubar .navbar .title-app .title {
     color: #1F2937;
     font-weight: 800;
     font-size: 20px;
