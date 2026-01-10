@@ -13,6 +13,7 @@ body {
     background-color: #F6F7FA;
 }
 
+/* Mobile View Style */
 /* Navbar Style */
 .group-navbar-menubar {
     width: 100%;
@@ -60,12 +61,27 @@ body {
     text-decoration: none;
 }
 
+.group-navbar-menubar .menubar {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.group-navbar-menubar .menubar .menu {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1F2937;
+    text-decoration: none;
+}
+
 /* Content Style */
 .content {
     width: 100%;
     padding: 113px 24px 16px;
     display: grid;
     grid-template-columns: auto;
+    justify-content: center;
     min-height: 100dvh;
 }
 
@@ -82,6 +98,11 @@ body {
 }
 
 /* Card New Tweet Style */
+.content .center .card-new-tweet {
+    scroll-behavior: smooth;
+    scroll-margin-top: 113px;
+}
+
 .content .center .card-new-tweet form {
     background-color: #FFF;
     height: 266px;
@@ -91,8 +112,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    scroll-behavior: smooth;
-    scroll-margin-top: 113px;
 }
 
 .content .center .card-new-tweet form .input-username-tweet {
@@ -195,7 +214,7 @@ body {
     color: #FFF;
 }
 
-/* Search Bar Mobile View Style */
+/* Search Bar Style */
 .content .center .search-bar-mobile-view {
     width: 100%;
     height: 30px;
@@ -239,6 +258,54 @@ body {
 }
 
 .content .center .search-bar-mobile-view .btn-search-mobile-view span {
+    font-size: 21px;
+    color: #C2C2C2;
+    font-weight: 500;
+}
+
+.group-navbar-menubar .navbar .search-bar {
+    width: 250px;
+    height: 30px;
+    padding: 0 24px;
+    border-radius: 15px;
+    background-color: #F6F7FA;
+    outline: 1px solid #C2C2C2;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-navbar-menubar .navbar .search-bar input {
+    background-color: #F6F7FA;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #C2C2C2;
+}
+
+.group-navbar-menubar .navbar .search-bar input:focus {
+    outline: none;
+}
+
+.group-navbar-menubar .navbar .search-bar input::placeholder {
+    font-weight: 500;
+    color: #C2C2C2;
+}
+
+
+.group-navbar-menubar .navbar .search-bar .btn-search {
+    background-color: #F6F7FA;
+    height: 100%;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.group-navbar-menubar .navbar .search-bar .btn-search span {
     font-size: 21px;
     color: #C2C2C2;
     font-weight: 500;
@@ -327,125 +394,86 @@ body {
     display: none;
 }
 
-/* Modal Style */
-/* .container-modal {
-    width: 100%;
-    height: 100dvh;
-    position: fixed;
-    inset: 0;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(2px);
+.content .right .card-total-tweet {
+    background-color: #FFF;
+    width: 305px;
+    height: 100px;
     padding: 16px 24px;
+    display: flex;
+    gap: 10px;
+    border-radius: 12px;
 }
 
-.container-modal .card-new-tweet {
-    background-color: #FFF;
-    height: 266px;
-    width: 100%;
-    padding: 16px 24px;
-    border-radius: 12px;
+.content .right .card-total-tweet-left {
+    width: 187px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.container-modal .card-new-tweet .input-username-tweet {
-    display: flex;
-    flex-direction: row;
-    gap: 13px;
+.content .right .card-total-tweet-left .total-tweet-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1F2937;
 }
 
-.container-modal .card-new-tweet .input-username-tweet img {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+.content .right .card-total-tweet-left .total-tweet {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1F2937;
 }
 
-.container-modal .card-new-tweet .input-username-tweet input#input-username-tweet {
-    width: 193px;
-    padding: 2px 4px;
-    border: 1px solid #C2C2C2;
-    border-radius: 3px;
-}
-
-.container-modal .card-new-tweet .input-username-tweet input#input-username-tweet:focus {
-    outline: none;
-    border: 1px solid #000;
-}
-
-.container-modal .card-new-tweet input.input-title-tweet {
-    width: 100%;
-    padding: 2px 4px;
-    border: 1px solid #C2C2C2;
-    border-radius: 3px;
-}
-
-.container-modal .card-new-tweet input.input-title-tweet:focus {
-    outline: none;
-    border: 1px solid #000;
-}
-
-.container-modal .card-new-tweet textarea.input-content-tweet {
-    width: 100%;
-    height: 120px;
-    padding: 3px 3px;
-    border: 1px solid #C2C2C2;
-    border-radius: 3px;
-    resize: none;
-}
-
-.container-modal .card-new-tweet textarea.input-content-tweet:focus {
-    outline: none;
-    border: 1px solid #000;
-}
-
-.container-modal .card-new-tweet .group-submit {
-    width: 100%;
+.content .right .card-total-tweet-right {
     display: flex;
     align-items: center;
-    justify-content: end;
-    gap: 16px;
-}
-
-.container-modal .card-new-tweet .group-submit .progress-donut {
-    width: 38px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background: conic-gradient(#6359e9 83%, #e5e7eb 0);
-    position: relative;
-    display: flex;
     justify-content: center;
+}
+
+.content .right .card-total-tweet-right span {
+    font-size: 60px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.container-modal .card-new-tweet .group-submit .progress-donut::before {
-    content: "";
-    position: absolute;
-    inset: 4px;
-    background-color: #FFF;
-    border-radius: 50%;    
-}
 
-.container-modal .card-new-tweet .group-submit .progress-donut span {
-    z-index: 1;
-    font-size: 12px;
-    font-weight: 500;
-}
+/* Tablet View Style */
+@media (min-width: 768px) {
+    /* Navbar Style */
+    .group-navbar-menubar .navbar{
+        justify-content: space-between;
+    }
+    .group-navbar-menubar .navbar .menubar {
+        display: flex;
+    }
 
-.container-modal .card-new-tweet .group-submit .btn-post {
-    background-color: #FFF;
-    padding: 3px 22.5px;
-    border-radius: 3px;
-    border: none;
-    outline: 1px solid #1F2937;
-    font-size: 12px;
-    font-weight: 500;
-    cursor: pointer;
-}
+    .group-navbar-menubar .navbar .search-bar {
+        display: flex;
+    }
 
-.container-modal .card-new-tweet .group-submit .btn-post:hover {
-    background-color: #1F2937;
-    outline: 1px solid #1F2937;
-    color: #FFF;
-} */
+    .group-navbar-menubar .menubar-mobile-view {
+        display: none;
+    }
+
+    /* Content Style */
+    .content {
+        padding: 72px 24px 16px;
+        grid-template-columns: auto 305px;
+        gap: 20px;
+    }
+
+    .content .right {
+        width: 100%;
+        display: flex;
+    }
+
+    /* Card New Tweet Style */
+    .content .center .card-new-tweet {
+        scroll-margin-top: 72px;
+    }
+
+    /* Search Bar Style */
+    .content .center .search-bar-mobile-view {
+        display: none;
+    }
+}
