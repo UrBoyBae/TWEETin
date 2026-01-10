@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWEETin</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Link Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+</head>
+
+<!-- Container -->
+<body class="container">
+    <!-- Navbar -->
+    <div class="group-navbar-menubar">
+        <div class="navbar">
+            <a href="" class="title">TWEETin</a>
+        </div>
+        <div class="menubar-mobile-view">
+            <a href="" class="menu">HOME</a>
+            <a href="#card-new-tweet" class="menu">POST</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="left"></div>
+        <div class="center">
+            <!-- Card New Tweet -->
+            <div class="card-new-tweet" id="card-new-tweet">
+                <form>
+                    <div class="input-username-tweet">
+                        <img src="./asset/images/user.png" alt="user">
+                        <input type="text" name="input-username-tweet" id="input-username-tweet" placeholder="Username..." required maxlength="12">
+                    </div>
+                    <input type="text" name="input-title-tweet" id="input-title-tweet" class="input-title-tweet" placeholder="Title..." required maxlength="70">
+                    <textarea name="input-content-tweet" id="input-content-tweet" class="input-content-tweet" placeholder="Content..." required maxlength="300"></textarea>
+                    <div class="group-submit">
+                        <div class="progress-donut">
+                            <span>250</span>
+                        </div>
+                        <button class="btn-post" id="btn-post">Posting</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Search Bar -->
+            <div class="search-bar-mobile-view">
+                <input type="text" id="search-bar-mobile-view" placeholder="Search" />
+                <button class="btn-search-mobile-view" id="btn-search-mobile-view">
+                    <span class="material-symbols-rounded">
+                        search
+                    </span>
+                </button>
+            </div>
+            <!-- All Tweet -->
+            <div class="all-tweet">
+                <!-- Tweet Not Found -->
+                <span class="tweet-not-found">Tweet not found !</span>
+                <div class="card-tweet">
+                    <div class="card-tweet-top">
+                        <img src="./asset/images/user.png" alt="user">
+                        <div class="group-title-tweet">
+                            <span class="title-tweet">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi qui
+                            </span>
+                            <span class="username-tweet">
+                                by Username
+                            </span>
+                        </div>
+                    </div>
+                    <span class="content-tweet">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae doloribus accusamus, quidem cupiditate sunt ratione rem, maxime optio quis ipsa, eius sit perferendis. Est, adipisci excepturi sit nihil, illum ullam officia animi harum inventore dolores asperiores quibusdam sint facilis vol
+                    </span>
+                </div>
+                <div class="card-tweet">
+                    <div class="card-tweet-top">
+                        <img src="./asset/images/user.png" alt="user">
+                        <div class="group-title-tweet">
+                            <span class="title-tweet">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi qui
+                            </span>
+                            <span class="username-tweet">
+                                by Username
+                            </span>
+                        </div>
+                    </div>
+                    <span class="content-tweet">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae doloribus accusamus, quidem cupiditate sunt ratione rem, maxime optio quis ipsa, eius sit perferendis. Est, adipisci excepturi sit nihil, illum ullam officia animi harum inventore dolores asperiores quibusdam sint facilis vol
+                    </span>
+                </div>
+                <div class="card-tweet">
+                    <div class="card-tweet-top">
+                        <img src="./asset/images/user.png" alt="user">
+                        <div class="group-title-tweet">
+                            <span class="title-tweet">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi qui
+                            </span>
+                            <span class="username-tweet">
+                                by Username
+                            </span>
+                        </div>
+                    </div>
+                    <span class="content-tweet">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae doloribus accusamus, quidem cupiditate sunt ratione rem, maxime optio quis ipsa, eius sit perferendis. Est, adipisci excepturi sit nihil, illum ullam officia animi harum inventore dolores asperiores quibusdam sint facilis vol
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <!-- Modal Post -->
+    <!-- <div class="container-modal">
+        <div class="card-new-tweet">
+            <div class="input-username-tweet">
+                <img src="./asset/images/user.png" alt="user">
+                <input type="text" name="input-username-tweet" id="input-username-tweet" placeholder="Username...">
+            </div>
+            <input type="text" name="input-title-tweet" id="input-title-tweet" class="input-title-tweet" placeholder="Title...">
+            <textarea name="input-content-tweet" id="input-content-tweet" class="input-content-tweet" placeholder="Content..."></textarea>
+            <div class="group-submit">
+                <div class="progress-donut">
+                    <span>250</span>
+                </div>
+                <button class="btn-post" id="btn-post">Posting</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Link JS -->
+    <script src="./asset/js/main.js"></script>
+</body>
+</html>

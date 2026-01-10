@@ -1,0 +1,451 @@
+/* Initialization  Style*/
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Style */
+.container {
+    background-color: #F6F7FA;
+}
+
+/* Navbar Style */
+.group-navbar-menubar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+}
+
+.group-navbar-menubar .navbar {
+    background-color: #FFF;
+    padding: 16px 24px;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.group-navbar-menubar .navbar .title {
+    color: #1F2937;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.group-navbar-menubar .menubar-mobile-view {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    padding: 10px 24px;
+    height: 41px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.group-navbar-menubar .menubar-mobile-view .menu {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1F2937;
+    text-decoration: none;
+}
+
+/* Content Style */
+.content {
+    width: 100%;
+    padding: 113px 24px 16px;
+    display: grid;
+    grid-template-columns: auto;
+    min-height: 100dvh;
+}
+
+.content .left {
+    display: none;
+}
+
+/* Content Center Style */
+.content .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Card New Tweet Style */
+.content .center .card-new-tweet form {
+    background-color: #FFF;
+    height: 266px;
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+    scroll-margin-top: 113px;
+}
+
+.content .center .card-new-tweet form .input-username-tweet {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+
+.content .center .card-new-tweet form .input-username-tweet img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.content .center .card-new-tweet form .input-username-tweet input#input-username-tweet {
+    width: 193px;
+    padding: 2px 4px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+}
+
+.content .center .card-new-tweet form .input-username-tweet input#input-username-tweet:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.content .center .card-new-tweet form input.input-title-tweet {
+    width: 100%;
+    padding: 2px 4px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+}
+
+.content .center .card-new-tweet form input.input-title-tweet:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.content .center .card-new-tweet form textarea.input-content-tweet {
+    width: 100%;
+    height: 120px;
+    padding: 3px 3px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    resize: none;
+}
+
+.content .center .card-new-tweet form textarea.input-content-tweet:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.content .center .card-new-tweet form .group-submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+}
+
+.content .center .card-new-tweet form .group-submit .progress-donut {
+    width: 38px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: conic-gradient(#6359e9 83%, #e5e7eb 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .center .card-new-tweet form .group-submit .progress-donut::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background-color: #FFF;
+    border-radius: 50%;    
+}
+
+.content .center .card-new-tweet form .group-submit .progress-donut span {
+    z-index: 1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.content .center .card-new-tweet form .group-submit .btn-post {
+    background-color: #FFF;
+    padding: 3px 22.5px;
+    border-radius: 3px;
+    border: none;
+    outline: 1px solid #1F2937;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content .center .card-new-tweet form .group-submit .btn-post:hover {
+    background-color: #1F2937;
+    outline: 1px solid #1F2937;
+    color: #FFF;
+}
+
+/* Search Bar Mobile View Style */
+.content .center .search-bar-mobile-view {
+    width: 100%;
+    height: 30px;
+    padding: 0 24px;
+    border-radius: 15px;
+    background-color: #F6F7FA;
+    outline: 1px solid #C2C2C2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .center .search-bar-mobile-view input {
+    background-color: #F6F7FA;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #C2C2C2;
+}
+
+.content .center .search-bar-mobile-view input:focus {
+    outline: none;
+}
+
+.content .center .search-bar-mobile-view input::placeholder {
+    font-weight: 500;
+    color: #C2C2C2;
+}
+
+
+.content .center .search-bar-mobile-view .btn-search-mobile-view {
+    background-color: #F6F7FA;
+    height: 100%;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.content .center .search-bar-mobile-view .btn-search-mobile-view span {
+    font-size: 21px;
+    color: #C2C2C2;
+    font-weight: 500;
+}
+
+/* All Tweet Style */
+.content .center .all-tweet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.content .center .all-tweet .tweet-not-found {
+    font-size: 16px;
+    font-weight: 500;
+    color: #C2C2C2;
+    display: none;
+}
+
+.content .center .all-tweet .card-tweet {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    background-color: #FFF;
+    border-radius: 12px;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 13px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top .group-title-tweet {
+    width: 100%;
+    height: fit-content;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top .group-title-tweet .title-tweet {
+    width: 100%;
+    height: fit-content;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1F2937;
+    text-align: justify;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top .group-title-tweet .username-tweet {
+    width: 100%;
+    height: fit-content;
+    margin-top: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #747A81;
+    text-align: left;
+}
+
+.content .center .all-tweet .card-tweet .content-tweet {
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1F2937;
+    text-align: justify;
+}
+
+.content .right {
+    display: none;
+}
+
+/* Modal Style */
+/* .container-modal {
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 16px 24px;
+}
+
+.container-modal .card-new-tweet {
+    background-color: #FFF;
+    height: 266px;
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-modal .card-new-tweet .input-username-tweet {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+
+.container-modal .card-new-tweet .input-username-tweet img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.container-modal .card-new-tweet .input-username-tweet input#input-username-tweet {
+    width: 193px;
+    padding: 2px 4px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+}
+
+.container-modal .card-new-tweet .input-username-tweet input#input-username-tweet:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.container-modal .card-new-tweet input.input-title-tweet {
+    width: 100%;
+    padding: 2px 4px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+}
+
+.container-modal .card-new-tweet input.input-title-tweet:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.container-modal .card-new-tweet textarea.input-content-tweet {
+    width: 100%;
+    height: 120px;
+    padding: 3px 3px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    resize: none;
+}
+
+.container-modal .card-new-tweet textarea.input-content-tweet:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.container-modal .card-new-tweet .group-submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+}
+
+.container-modal .card-new-tweet .group-submit .progress-donut {
+    width: 38px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: conic-gradient(#6359e9 83%, #e5e7eb 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-modal .card-new-tweet .group-submit .progress-donut::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background-color: #FFF;
+    border-radius: 50%;    
+}
+
+.container-modal .card-new-tweet .group-submit .progress-donut span {
+    z-index: 1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.container-modal .card-new-tweet .group-submit .btn-post {
+    background-color: #FFF;
+    padding: 3px 22.5px;
+    border-radius: 3px;
+    border: none;
+    outline: 1px solid #1F2937;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container-modal .card-new-tweet .group-submit .btn-post:hover {
+    background-color: #1F2937;
+    outline: 1px solid #1F2937;
+    color: #FFF;
+} */
