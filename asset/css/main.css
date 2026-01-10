@@ -442,6 +442,7 @@ body {
     /* Navbar Style */
     .group-navbar-menubar .navbar{
         justify-content: space-between;
+        border-bottom: none;
     }
     .group-navbar-menubar .navbar .menubar {
         display: flex;
@@ -475,5 +476,32 @@ body {
     /* Search Bar Style */
     .content .center .search-bar-mobile-view {
         display: none;
+    }
+}
+
+/* 1024px View Style */
+@media (min-width: 1024px) {
+    /* Navbar Style */
+    .group-navbar-menubar .navbar .search-bar {
+        display: flex;
+        width: 400px;
+    }
+
+    /* Content Style */
+    .content {
+        grid-template-columns: 180px 450px 305px;
+    }
+
+    .content .left {
+        width: 100%;
+        display: flex;
+    }
+}
+
+/* 1440px View Style */
+@media (min-width: 1440px) {
+    /* Content Style */
+    .content {
+        grid-template-columns: 450px 450px 450px;
     }
 }
