@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const json = await response.json();
-            const datas = json.data;
+            const datas = json.data.reverse();
             originalData.push(...datas);
 
             const containerAllTweet = document.getElementById("all-tweet");
