@@ -1,0 +1,567 @@
+/* Initialization  Style*/
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body Style */
+.container {
+    background-color: #F6F7FA;
+}
+
+/* Mobile View Style */
+/* Navbar Style */
+.group-navbar-menubar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+}
+
+.group-navbar-menubar .navbar {
+    background-color: #FFF;
+    padding: 16px 24px;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.group-navbar-menubar .navbar .title-app {
+    display: flex;
+    gap: 10px;
+}
+
+.group-navbar-menubar .navbar .title-app .title {
+    color: #1F2937;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.group-navbar-menubar .menubar-mobile-view {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    padding: 10px 24px;
+    height: 41px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.group-navbar-menubar .menubar-mobile-view .menu {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1F2937;
+    text-decoration: none;
+}
+
+.group-navbar-menubar .menubar {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.group-navbar-menubar .menubar .menu {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1F2937;
+    text-decoration: none;
+}
+
+/* Content Style */
+.content {
+    width: 100%;
+    padding: 113px 24px 16px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+.content .left {
+    display: none;
+}
+
+/* Content Center Style */
+.content .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Card New Tweet Style */
+.content .center .card-new-tweet {
+    scroll-margin-top: 113px;
+}
+
+.content .center .card-new-tweet form {
+    background-color: #FFF;
+    height: 266px;
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content .center .card-new-tweet form .input-username-tweet {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.content .center .card-new-tweet form .input-username-tweet img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.content .center .card-new-tweet form .input-username-tweet input#input-username-tweet {
+    width: 193px;
+    padding: 2px 4px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+}
+
+.content .center .card-new-tweet form .input-username-tweet input#input-username-tweet:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.content .center .card-new-tweet form .input-username-tweet p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.content .center .card-new-tweet form .group-title-tweet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.content .center .card-new-tweet form .group-title-tweet input.input-title-tweet {
+    width: 100%;
+    padding: 2px 4px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+}
+
+.content .center .card-new-tweet form .group-title-tweet input.input-title-tweet:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.content .center .card-new-tweet form .group-title-tweet p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.content .center .card-new-tweet form textarea.input-content-tweet {
+    width: 100%;
+    height: 120px;
+    padding: 3px 3px;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    resize: none;
+}
+
+.content .center .card-new-tweet form textarea.input-content-tweet:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.content .center .card-new-tweet form .group-submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+}
+
+.content .center .card-new-tweet form .group-submit .progress-donut {
+    width: 38px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: conic-gradient(#6359e9 0%, #e5e7eb 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .center .card-new-tweet form .group-submit .progress-donut::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background-color: #FFF;
+    border-radius: 50%;    
+}
+
+.content .center .card-new-tweet form .group-submit .progress-donut span {
+    z-index: 1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.content .center .card-new-tweet form .group-submit .btn-post {
+    background-color: #FFF;
+    padding: 3px 22.5px;
+    border-radius: 3px;
+    border: none;
+    outline: 1px solid #1F2937;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content .center .card-new-tweet form .group-submit .btn-post:hover {
+    background-color: #1F2937;
+    outline: 1px solid #1F2937;
+    color: #FFF;
+}
+
+/* Search Bar Style */
+.content .center .search-bar-mobile-view {
+    width: 100%;
+    height: 30px;
+    padding: 0 24px;
+    border-radius: 15px;
+    background-color: #F6F7FA;
+    outline: 1px solid #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .center .search-bar-mobile-view input {
+    background-color: #F6F7FA;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1F2937;
+}
+
+.content .center .search-bar-mobile-view input:focus {
+    outline: none;
+}
+
+.content .center .search-bar-mobile-view input::placeholder {
+    font-weight: 500;
+    color: #1F2937;
+}
+
+
+.content .center .search-bar-mobile-view .btn-search-mobile-view {
+    background-color: #F6F7FA;
+    height: 100%;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.content .center .search-bar-mobile-view .btn-search-mobile-view span {
+    font-size: 21px;
+    color: #1F2937;
+    font-weight: 500;
+}
+
+.group-navbar-menubar .navbar .search-bar {
+    width: 250px;
+    height: 30px;
+    padding: 0 24px;
+    border-radius: 15px;
+    background-color: #F6F7FA;
+    outline: 1px solid #1F2937;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-navbar-menubar .navbar .search-bar input {
+    background-color: #F6F7FA;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1F2937;
+}
+
+.group-navbar-menubar .navbar .search-bar input:focus {
+    outline: none;
+}
+
+.group-navbar-menubar .navbar .search-bar input::placeholder {
+    font-weight: 500;
+    color: #1F2937;
+}
+
+
+.group-navbar-menubar .navbar .search-bar .btn-search {
+    background-color: #F6F7FA;
+    height: 100%;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.group-navbar-menubar .navbar .search-bar .btn-search span {
+    font-size: 21px;
+    color: #1F2937;
+    font-weight: 500;
+}
+
+/* All Tweet Style */
+.content .center .all-tweet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.content .center .all-tweet .tweet-not-found {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1F2937;
+}
+
+.content .center .all-tweet .card-tweet {
+    width: 100%;
+    min-width: 327.2px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    background-color: #FFF;
+    border-radius: 12px;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 13px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top .group-title-tweet {
+    width: 100%;
+    height: fit-content;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top .group-title-tweet .title-tweet {
+    width: 100%;
+    height: fit-content;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1F2937;
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.content .center .all-tweet .card-tweet .card-tweet-top .group-title-tweet .username-tweet {
+    width: 100%;
+    height: fit-content;
+    margin-top: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #747A81;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.content .center .all-tweet .card-tweet .content-tweet {
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1F2937;
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.content .right {
+    display: none;
+}
+
+.content .right .card-total-tweet {
+    background-color: #FFF;
+    width: 305px;
+    height: 100px;
+    padding: 16px 24px;
+    display: flex;
+    gap: 10px;
+    border-radius: 12px;
+}
+
+.content .right .card-total-tweet-left {
+    width: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content .right .card-total-tweet-left .total-tweet-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.content .right .card-total-tweet-left .total-tweet {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1F2937;
+}
+
+.content .right .card-total-tweet-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .right .card-total-tweet-right span {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Toats Style */
+.content .toast {
+    height: 58px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    z-index: 2;
+    background-color: #FFF;
+    color: #1F2937;
+    font-weight: 500;
+    border-bottom: 5px solid #02B15A;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+    transition: all 0.5s ease;
+    transform: translateY(-300%);
+}
+
+.content .toast.toast-active {
+    transform: translateY(0%);
+}
+
+.content .toast span.material-symbols-rounded {
+    font-size: 34px;
+    color: #02B15A;
+}
+
+/* Tablet View Style */
+@media (min-width: 768px) {
+    /* Navbar Style */
+    .group-navbar-menubar .navbar{
+        justify-content: space-between;
+        border-bottom: none;
+    }
+    .group-navbar-menubar .navbar .menubar {
+        display: flex;
+    }
+
+    .group-navbar-menubar .navbar .search-bar {
+        display: flex;
+    }
+
+    .group-navbar-menubar .menubar-mobile-view {
+        display: none;
+    }
+
+    /* Content Style */
+    .content {
+        padding: 72px 24px 16px;
+        grid-template-columns: auto 305px;
+        gap: 20px;
+    }
+
+    .content .right {
+        width: 100%;
+        display: flex;
+    }
+
+    /* Card New Tweet Style */
+    .content .center .card-new-tweet {
+        scroll-margin-top: 72px;
+    }
+
+    /* Search Bar Style */
+    .content .center .search-bar-mobile-view {
+        display: none;
+    }
+}
+
+/* 1024px View Style */
+@media (min-width: 1024px) {
+    /* Navbar Style */
+    .group-navbar-menubar .navbar .search-bar {
+        display: flex;
+        width: 400px;
+    }
+
+    /* Content Style */
+    .content {
+        grid-template-columns: 180px 450px 305px;
+    }
+
+    .content .left {
+        width: 100%;
+        display: flex;
+    }
+}
+
+/* 1440px View Style */
+@media (min-width: 1440px) {
+    /* Content Style */
+    .content {
+        grid-template-columns: 450px 450px 450px;
+    }
+}
