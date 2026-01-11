@@ -6,6 +6,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Body Style */
@@ -104,7 +105,6 @@ body {
 
 /* Card New Tweet Style */
 .content .center .card-new-tweet {
-    scroll-behavior: smooth;
     scroll-margin-top: 113px;
 }
 
@@ -121,7 +121,7 @@ body {
 
 .content .center .card-new-tweet form .input-username-tweet {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 13px;
 }
 
@@ -143,16 +143,35 @@ body {
     border: 1px solid #000;
 }
 
-.content .center .card-new-tweet form input.input-title-tweet {
+.content .center .card-new-tweet form .input-username-tweet p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.content .center .card-new-tweet form .group-title-tweet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.content .center .card-new-tweet form .group-title-tweet input.input-title-tweet {
     width: 100%;
     padding: 2px 4px;
     border: 1px solid #C2C2C2;
     border-radius: 3px;
 }
 
-.content .center .card-new-tweet form input.input-title-tweet:focus {
+.content .center .card-new-tweet form .group-title-tweet input.input-title-tweet:focus {
     outline: none;
     border: 1px solid #000;
+}
+
+.content .center .card-new-tweet form .group-title-tweet p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #1F2937;
 }
 
 .content .center .card-new-tweet form textarea.input-content-tweet {
@@ -181,7 +200,7 @@ body {
     width: 38px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: conic-gradient(#6359e9 83%, #e5e7eb 0);
+    background: conic-gradient(#6359e9 0%, #e5e7eb 0);
     position: relative;
     display: flex;
     justify-content: center;
@@ -329,7 +348,6 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: #C2C2C2;
-    display: none;
 }
 
 .content .center .all-tweet .card-tweet {
@@ -374,6 +392,9 @@ body {
     font-weight: 500;
     color: #1F2937;
     text-align: justify;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
 }
 
 .content .center .all-tweet .card-tweet .card-tweet-top .group-title-tweet .username-tweet {
@@ -384,6 +405,9 @@ body {
     font-weight: 500;
     color: #747A81;
     text-align: left;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
 }
 
 .content .center .all-tweet .card-tweet .content-tweet {
@@ -393,6 +417,9 @@ body {
     font-weight: 500;
     color: #1F2937;
     text-align: justify;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
 }
 
 .content .right {
@@ -441,6 +468,33 @@ body {
     justify-content: center;
 }
 
+/* Toats Style */
+.content .toast {
+    height: 58px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    z-index: 2;
+    background-color: #FFF;
+    color: #1F2937;
+    font-weight: 500;
+    border-bottom: 5px solid #02B15A;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+    transition: all 0.5s ease;
+    transform: translateY(-300%);
+}
+
+.content .toast.toast-active {
+    transform: translateY(0%);
+}
+
+.content .toast span.material-symbols-rounded {
+    font-size: 34px;
+    color: #02B15A;
+}
 
 /* Tablet View Style */
 @media (min-width: 768px) {
