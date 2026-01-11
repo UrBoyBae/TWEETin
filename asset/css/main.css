@@ -245,7 +245,7 @@ body {
     padding: 0 24px;
     border-radius: 15px;
     background-color: #F6F7FA;
-    outline: 1px solid #C2C2C2;
+    outline: 1px solid #1F2937;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -258,7 +258,7 @@ body {
     border: none;
     font-size: 13px;
     font-weight: 500;
-    color: #C2C2C2;
+    color: #1F2937;
 }
 
 .content .center .search-bar-mobile-view input:focus {
@@ -267,7 +267,7 @@ body {
 
 .content .center .search-bar-mobile-view input::placeholder {
     font-weight: 500;
-    color: #C2C2C2;
+    color: #1F2937;
 }
 
 
@@ -283,7 +283,7 @@ body {
 
 .content .center .search-bar-mobile-view .btn-search-mobile-view span {
     font-size: 21px;
-    color: #C2C2C2;
+    color: #1F2937;
     font-weight: 500;
 }
 
@@ -293,7 +293,7 @@ body {
     padding: 0 24px;
     border-radius: 15px;
     background-color: #F6F7FA;
-    outline: 1px solid #C2C2C2;
+    outline: 1px solid #1F2937;
     display: none;
     align-items: center;
     justify-content: space-between;
@@ -306,7 +306,7 @@ body {
     border: none;
     font-size: 13px;
     font-weight: 500;
-    color: #C2C2C2;
+    color: #1F2937;
 }
 
 .group-navbar-menubar .navbar .search-bar input:focus {
@@ -315,7 +315,7 @@ body {
 
 .group-navbar-menubar .navbar .search-bar input::placeholder {
     font-weight: 500;
-    color: #C2C2C2;
+    color: #1F2937;
 }
 
 
@@ -331,7 +331,7 @@ body {
 
 .group-navbar-menubar .navbar .search-bar .btn-search span {
     font-size: 21px;
-    color: #C2C2C2;
+    color: #1F2937;
     font-weight: 500;
 }
 
@@ -347,11 +347,12 @@ body {
 .content .center .all-tweet .tweet-not-found {
     font-size: 16px;
     font-weight: 500;
-    color: #C2C2C2;
+    color: #1F2937;
 }
 
 .content .center .all-tweet .card-tweet {
     width: 100%;
+    min-width: 327.2px;
     height: fit-content;
     display: flex;
     flex-direction: column;

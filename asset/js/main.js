@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
             containerAllTweet.innerHTML = "";
             
             if (datas.length === 0) {
-                containerAllTweet.style.borderTop = "2px solid #C2C2C2";
                 containerAllTweet.style.paddingTop = "25px";
                 containerAllTweet.insertAdjacentHTML("afterbegin",`
                     <span class="tweet-not-found">Tweet not found !</span>    
